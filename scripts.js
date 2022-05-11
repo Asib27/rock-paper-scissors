@@ -53,4 +53,4 @@ play = (no_of_games)=>{
     }
 }
 
-play(5);
+//play(5);
