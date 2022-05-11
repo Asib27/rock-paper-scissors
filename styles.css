@@ -34,3 +34,12 @@ body{
 #result-section .cards{
     align-items: center;
 }
+
+#result-section #computer-choice{
+    transform: rotateY(180deg);
+}
+
+#rock, #paper, #scissors{
+    max-width: 33vw;
+    max-height: 40vh;
+}
