@@ -54,3 +54,16 @@ play = (no_of_games)=>{
 }
 
 //play(5);
+
+choiceClicked = (event)=>{
+    console.dir(event.target);
+    console.dir(event.target.parentElement.classList[0]);
+
+    if(event.target.parentElement.classList[0] != 'card')
+        event.target.classList.add('selected');
+    else
+        event.target.parentNode.classList.add('selected');
+}
+
+choices = Array.from(document.querySelectorAll('#choose-section div.card'))
+choices.forEach(el=> el.addEventListener('click', choiceClicked))

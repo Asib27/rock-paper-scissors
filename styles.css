@@ -43,3 +43,7 @@ body{
     max-width: 33vw;
     max-height: 40vh;
 }
+
+#choose-section .card:hover{
+    transform: scale(1.1);   
+}
